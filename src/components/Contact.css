@@ -1,0 +1,75 @@
+﻿.contact-grid {
+  display: grid;
+  grid-template-columns: 2.4fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.contact-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.contact-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 20px;
+  text-decoration: none;
+  transition: all var(--transition);
+  cursor: pointer;
+}
+
+.contact-card:hover {
+  transform: translateX(6px);
+  box-shadow: var(--shadow-card-hover);
+}
+
+.contact-card-static { cursor: default; }
+.contact-card-static:hover { transform: none; }
+
+.cc-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md);
+  background: rgba(139, 92, 246, 0.15);
+  border: 1px solid rgba(139, 92, 246, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-neon);
+  flex-shrink: 0;
+  transition: all var(--transition);
+}
+
+.cc-icon-blue {
+  background: rgba(34, 211, 238, 0.12);
+  border-color: rgba(34, 211, 238, 0.25);
+  color: var(--accent-cyan);
+}
+
+.cc-icon-green {
+  background: rgba(52, 211, 153, 0.12);
+  border-color: rgba(52, 211, 153, 0.25);
+  color: var(--accent-green);
+}
+
+.cc-label {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 3px;
+}
+
+.cc-value {
+  font-size: 0.9rem;
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+@media (max-width: 900px) {
+  .contact-grid { grid-template-columns: 2fr; }
+}

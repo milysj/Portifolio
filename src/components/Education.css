@@ -1,0 +1,114 @@
+﻿.edu-timeline {
+  position: relative;
+  padding: 20px 0;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.edu-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, transparent, var(--accent-primary), var(--accent-cyan), transparent);
+  transform: translateX(-50%);
+}
+
+.edu-item {
+  position: relative;
+  display: flex;
+  margin-bottom: 48px;
+}
+
+.edu-item.edu-left {
+  justify-content: flex-end;
+  padding-right: calc(50% + 32px);
+}
+
+.edu-item.edu-right {
+  justify-content: flex-start;
+  padding-left: calc(50% + 32px);
+}
+
+.edu-node {
+  position: absolute;
+  left: 50%;
+  top: 24px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--accent-primary);
+  transform: translateX(-50%);
+  box-shadow: 0 0 0 4px var(--bg-secondary), 0 0 12px var(--accent-primary);
+  z-index: 1;
+}
+
+.edu-card {
+  padding: 24px;
+  max-width: 340px;
+  width: 100%;
+  position: relative;
+  transition: all var(--transition);
+  animation: scaleIn 0.6s ease both;
+}
+
+.edu-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-card-hover);
+}
+
+.edu-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-md);
+  background: rgba(139, 92, 246, 0.15);
+  border: 1px solid rgba(139, 92, 246, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-neon);
+  margin-bottom: 14px;
+}
+
+.edu-body {}
+
+.edu-degree {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.edu-institution {
+  font-size: 0.88rem;
+  color: var(--accent-neon);
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.edu-period {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+}
+
+.edu-desc {
+  font-size: 0.87rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .edu-line { left: 20px; }
+  .edu-item.edu-left, .edu-item.edu-right {
+    justify-content: flex-start;
+    padding-left: 52px;
+    padding-right: 0;
+  }
+  .edu-node { left: 20px; }
+  .edu-card { max-width: 100%; }
+}
