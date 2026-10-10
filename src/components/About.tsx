@@ -94,6 +94,15 @@ export default function About() {
             <p>
               {portfolioData.bio}
             </p>
+            <p>
+              {portfolioData.bio2}
+            </p>
+            <p>
+              {portfolioData.bio3}
+            </p>
+            <p>
+              {portfolioData.bio4}
+            </p>
           </div>
 
           <div className="about-actions">

@@ -1,4 +1,4 @@
-﻿import { GraduationCap, Calendar, BookOpen } from 'lucide-react';
+import { GraduationCap, Calendar, BookOpen } from 'lucide-react';
 import { portfolioData } from '../data/portfolio';
 import './Education.css';
 
@@ -30,7 +30,15 @@ export default function Education() {
                     <Calendar size={13} />
                     <span className="font-mono">{item.period}</span>
                   </div>
-                  <p className="edu-desc">{item.description}</p>
+                  <div className="edu-desc">
+                    {Array.isArray(item.description) ? (
+                      item.description.map((desc, idx) => (
+                        <p key={idx}>{desc}</p>
+                      ))
+                    ) : (
+                      <p>{item.description}</p>
+                    )}
+                  </div>
                 </div>
               </div>
               <div className="edu-node" />

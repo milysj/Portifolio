@@ -1,4 +1,4 @@
-﻿import { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Sun, Moon, Code2 } from 'lucide-react';
 import './Navbar.css';
 
@@ -12,6 +12,7 @@ const links = [
   { href: '#about', label: 'Sobre' },
   { href: '#skills', label: 'Skills' },
   { href: '#projects', label: 'Projetos' },
+  { href: '#experience', label: 'Experiência' },
   { href: '#education', label: 'Educação' },
   { href: '#contact', label: 'Contato' },
 ];
