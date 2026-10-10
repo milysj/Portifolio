@@ -127,12 +127,6 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
-  text-align: justify;
-  text-justify: inter-word;
-}
-
-.exp-desc p {
-  text-indent: 1.25cm;
 }
 
 .exp-skills {
