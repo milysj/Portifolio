@@ -104,6 +104,11 @@
   flex-direction: column;
   gap: 10px;
   text-align: justify;
+  text-justify: inter-word;
+}
+
+.edu-desc p {
+  text-indent: 1.25cm;
 }
 
 @media (max-width: 768px) {

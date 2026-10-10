@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+﻿import { useState, useEffect } from 'react';
 import { Sun, Moon, Code2 } from 'lucide-react';
 import './Navbar.css';
 
@@ -38,7 +38,7 @@ export default function Navbar({ theme, toggleTheme }: NavbarProps) {
       <div className="nav-inner container">
         <a href="#hero" className="nav-logo" onClick={() => handleLink('#hero')}>
           <Code2 size={20} />
-          <span className="font-mono">Portfolio</span>
+          <span className="font-mono"></span>
         </a>
 
         <ul className={`nav-links${open ? ' open' : ''}`}>
