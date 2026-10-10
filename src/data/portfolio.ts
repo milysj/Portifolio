@@ -1,6 +1,6 @@
 export const portfolioData = {
   name: 'João Milone',
-  avatar: '/avatar.jpg',
+  avatar: './avatar.jpg',
   role: 'Desenvolvedor Full Stack',
   roles: ['Desenvolvedor Full Stack', 'Desenvolvedor Frontend', 'Desenvolvedor Backend'],
   tagline: 'Criando soluções web modernas, gamificadas e escaláveis com React, Next.js e TypeScript',
@@ -14,13 +14,13 @@ export const portfolioData = {
   education: [
     {
       id: 1,
-      degree: 'Análise e Desenvolvimento de Sistemas',
+      degree: 'Desenvolvimento de Software Multiplataforma',
       institution: 'FATEC Votorantim',
       period: 'Em andamento',
-      description: 'Formação superior com foco em engenharia de software, integração & entrega contínua (DevOps), estruturas de dados e desenvolvimento web.',
+      description: 'Formação superior focada na construção de soluções para Web, Mobile e Desktop. Abrange metodologias ágeis, DevOps, Inteligência Artificial, segurança da informação e análise de dados para o desenvolvimento de sistemas escaláveis.',
     }
-
   ],
+
 
   skills: {
     frontend: [
