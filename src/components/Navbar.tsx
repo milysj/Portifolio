@@ -1,5 +1,5 @@
-﻿import { useState, useEffect } from 'react';
-import { Sun, Moon, Code2 } from 'lucide-react';
+import { useState, useEffect } from 'react';
+import { Sun, Moon } from 'lucide-react';
 import './Navbar.css';
 
 interface NavbarProps {
@@ -37,8 +37,12 @@ export default function Navbar({ theme, toggleTheme }: NavbarProps) {
     <nav className={`navbar${scrolled ? ' scrolled' : ''}`}>
       <div className="nav-inner container">
         <a href="#hero" className="nav-logo" onClick={() => handleLink('#hero')}>
-          <Code2 size={20} />
-          <span className="font-mono"></span>
+          <span className="logo-brand font-mono">
+            <span className="brand-bracket">&lt;</span>
+            <span className="brand-name">Milone</span>
+            <span className="brand-dot-dev">.dev</span>
+            <span className="brand-bracket"> /&gt;</span>
+          </span>
         </a>
 
         <ul className={`nav-links${open ? ' open' : ''}`}>

@@ -1,4 +1,4 @@
-﻿.navbar {
+.navbar {
   position: fixed;
   top: 0;
   left: 0;
@@ -30,16 +30,45 @@
 .nav-logo {
   display: flex;
   align-items: center;
-  gap: 8px;
-  font-size: 1rem;
-  font-weight: 700;
-  color: var(--text-primary);
   text-decoration: none;
-  transition: color var(--transition);
+  transition: transform var(--transition);
 }
 
-.nav-logo svg {
-  color: var(--accent-primary);
+.nav-logo:hover {
+  transform: translateY(-1px);
+}
+
+.logo-brand {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.3px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.brand-bracket {
+  color: var(--accent-neon);
+  font-weight: 700;
+  transition: all var(--transition);
+}
+
+.brand-name {
+  color: var(--text-primary);
+  font-weight: 800;
+}
+
+.brand-dot-dev {
+  color: var(--accent-neon);
+  font-weight: 700;
+  transition: all var(--transition);
+}
+
+.nav-logo:hover .brand-dot-dev,
+.nav-logo:hover .brand-bracket {
+  color: #c084fc;
+  text-shadow: 0 0 14px rgba(168, 85, 247, 0.7);
 }
 
 .nav-links {
