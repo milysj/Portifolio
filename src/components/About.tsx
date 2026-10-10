@@ -98,9 +98,6 @@ export default function About() {
               {portfolioData.bio2}
             </p>
             <p>
-              {portfolioData.bio3}
-            </p>
-            <p>
               {portfolioData.bio4}
             </p>
           </div>
